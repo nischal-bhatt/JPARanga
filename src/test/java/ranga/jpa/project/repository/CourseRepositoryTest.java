@@ -38,4 +38,18 @@ class CourseRepositoryTest {
 	      assertNull(repo.findById(10001L));
 	}
 
+	@Test
+	@Transactional
+	@DirtiesContext
+	public void save_basic() {
+		Course course = repo.findById(10001L);
+		assertEquals("ranga karanam",course.getName());
+		
+		course.setName("changed!");
+		repo.save(course);
+		Course course1 = repo.findById(10001L);
+		
+		assertEquals("changed!",course1.getName());
+		
+	}
 }
