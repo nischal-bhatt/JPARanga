@@ -15,4 +15,10 @@ public class CourseRepository {
 	{
 		return em.find(Course.class, id);
 	}
+	
+	public void deleteById(Long id)
+	{
+		Course course = this.findById(id);
+		em.remove(course);
+	}
 }
