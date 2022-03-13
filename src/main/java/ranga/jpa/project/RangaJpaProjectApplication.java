@@ -30,7 +30,7 @@ public class RangaJpaProjectApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		Course course = repository.findById(10013L);
 		logger.info("course is {}",course);
-	    repository.deleteById(10001L);
+	    //repository.deleteById(10001L);
 	}
 
 }
