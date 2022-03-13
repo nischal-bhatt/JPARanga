@@ -52,4 +52,15 @@ class CourseRepositoryTest {
 		assertEquals("changed!",course1.getName());
 		
 	}
+	
+	
+	@Test
+
+	@DirtiesContext
+	public void playwithentitymanager() {
+		repo.playWithEntityManager();
+		
+	}
+	
+	
 }
