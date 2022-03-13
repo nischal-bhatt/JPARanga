@@ -33,7 +33,7 @@ public class RangaJpaProjectApplication implements CommandLineRunner{
 	    //repository.deleteById(10001L);
 		Course course1 = new Course("microservices");
 		repository.save(course1);
-		course1.setName("changed!");
+		course1.setName("changed!123");
 		repository.save(course1);
 	}
 
