@@ -24,7 +24,7 @@ public class RangaJpaProjectApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Course course = repository.findById(10010L);
+		Course course = repository.findById(10013L);
 		logger.info("course is {}",course);
 	}
 
